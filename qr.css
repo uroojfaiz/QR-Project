@@ -1,0 +1,109 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Glassmorphism Box */
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin: auto;
+  height: 350px;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  width: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+}
+
+.box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00fff7;
+  text-shadow: 0 0 10px #00fff7;
+}
+
+/* Input Styling */
+.box input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.box input::placeholder {
+  color: #ccc;
+}
+
+.box input:focus {
+  background: rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px #00fff7;
+}
+
+/* Button with Neon Effect */
+.box button {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #00fff7, #00d4ff);
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.box button:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #00d4ff, #007bff);
+  box-shadow: 0 0 15px #00fff7, 0 0 30px #00d4ff;
+}
+
+/* QR Code Box */
+#qrbox {
+margin: auto;
+  padding: 20px;
+width: 200px;
+height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  color: #ccc;
+  transition: 0.3s ease;
+}
+
+#qrbox:hover {
+  border-color: #00fff7;
+  box-shadow: 0 0 15px #00fff7;
+}
